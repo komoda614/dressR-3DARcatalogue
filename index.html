@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <!-- bodyタグ内の任意の位置に配置-->
+    <script
+    type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
     <header>
         <a href="https://wakuzawa-inc.com/" class="wakuzawa-logo"><img src="image/ワクザワ黒.png" alt="ワクザワ"></a>
         <ul class="header-list">
@@ -72,7 +78,121 @@
 
         <h2 class="ar-title">3D/AR CATALOGUE</h2>    <!-- 3D/AR-catalogue -->
 
-        <div class="ar-container">
+        <div class="ar-container">  <!--mv------------------------------------------>
+            <!-- slick.jsアイテム-->
+            <!-- ios-srcとsrcのパスは要変更-->
+            <model-viewer
+            class="model-viewer"
+            ios-src="model/skirt.usdz"
+            src="model/skirt.glb"
+            preload="preload"
+            camera-controls="camera-controls"
+            shadow-intensity="1"
+            ar="ar"
+            ar-modes="webxr scene-viewer quick-look fallback"
+            ar-scale="fixed"
+            alt="A 3D model of notconventional"
+            >
+            <button class="model-viewer-btn" slot="ar-button">
+            クリックしてARを表示
+            </button>
+            </model-viewer>
+
+            <!-- slick.jsアイテム-->
+            <!-- ios-srcとsrcのパスは要変更-->
+            <model-viewer
+            class="model-viewer"
+            ios-src="model/hoodie.usdz"
+            src="model/hoodie.glb"
+            preload="preload"
+            camera-controls="camera-controls"
+            shadow-intensity="1"
+            ar="ar"
+            ar-modes="webxr scene-viewer quick-look fallback"
+            ar-scale="fixed"
+            alt="A 3D model of notconventional"
+            >
+            <button class="model-viewer-btn" slot="ar-button">
+                クリックしてARを表示
+            </button>
+            </model-viewer>
+
+            <!-- slick.jsアイテム-->
+            <!-- ios-srcとsrcのパスは要変更-->
+            <model-viewer
+            class="model-viewer"
+            ios-src="model/sweater.usdz"
+            src="model/sweater.glb"
+            preload="preload"
+            camera-controls="camera-controls"
+            shadow-intensity="1"
+            ar="ar"
+            ar-modes="webxr scene-viewer quick-look fallback"
+            ar-scale="fixed"
+            alt="A 3D model of notconventional"
+            >
+            <button class="model-viewer-btn" slot="ar-button">
+                クリックしてARを表示
+            </button>
+            </model-viewer>
+
+            <!-- slick.jsアイテム-->
+            <!-- ios-srcとsrcのパスは要変更-->
+            <model-viewer
+            class="model-viewer"
+            ios-src="model/gassyou.usdz"
+            src="model/gassyou.glb"
+            preload="preload"
+            camera-controls="camera-controls"
+            shadow-intensity="1"
+            ar="ar"
+            ar-modes="webxr scene-viewer quick-look fallback"
+            ar-scale="fixed"
+            alt="A 3D model of notconventional"
+            >
+            <button class="model-viewer-btn" slot="ar-button">
+                クリックしてARを表示
+            </button>
+            </model-viewer>
+
+            <!-- slick.jsアイテム-->
+            <!-- ios-srcとsrcのパスは要変更-->
+            <model-viewer
+            class="model-viewer"
+            ios-src="model/tonbi.usdz"
+            src="model/tonbi.glb"
+            preload="preload"
+            camera-controls="camera-controls"
+            shadow-intensity="1"
+            ar="ar"
+            ar-modes="webxr scene-viewer quick-look fallback"
+            ar-scale="fixed"
+            alt="A 3D model of notconventional"
+            >
+            <button class="model-viewer-btn" slot="ar-button">
+                クリックしてARを表示
+            </button>
+            </model-viewer>
+
+            <!-- slick.jsアイテム-->
+            <!-- ios-srcとsrcのパスは要変更-->
+            <model-viewer
+            class="model-viewer"
+            ios-src="model/cape.usdz"
+            src="model/cape.glb"
+            preload="preload"
+            camera-controls="camera-controls"
+            shadow-intensity="1"
+            ar="ar"
+            ar-modes="webxr scene-viewer quick-look fallback"
+            ar-scale="fixed"
+            alt="A 3D model of notconventional"
+            >
+            <button class="model-viewer-btn" slot="ar-button">
+                クリックしてARを表示
+            </button>
+            </model-viewer>
+
             <img src="image/currybread.png" alt="">
             <img src="image/currybread.png" alt="">
             <img src="image/currybread.png" alt="">
