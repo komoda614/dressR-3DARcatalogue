@@ -192,7 +192,7 @@ html body main .ar-container .model-viewer {
   background-color: #fff;
 }
 
-html body main .ar-container ​ .model-viewer-btn {
+html body main .ar-container .model-viewer ​ .model-viewer-btn {
   position: absolute;
   left: 16px;
   bottom: 10px;
@@ -202,6 +202,7 @@ html body main .ar-container ​ .model-viewer-btn {
   color: white;
   background-color: #525252;
   border: none;
+  z-index: 100;
 }
 
 html body .contact-btn {
@@ -344,17 +345,7 @@ html body footer {
   html body main .ar-container .model-viewer {
     width: 64vw;
     height: 75vh;
+    margin-bottom: 4px;
     background-color: #fff;
-  }
-  html body main .ar-container ​ .model-viewer-btn {
-    position: absolute;
-    left: 16px;
-    bottom: 10px;
-    height: 2.9vw;
-    font-weight: bold;
-    line-height: 2.9vw;
-    color: white;
-    background-color: #525252;
-    border: none;
   }
 }
