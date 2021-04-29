@@ -183,18 +183,19 @@ html {
           width: $img-width;
           height: $mv-height;
           background-color: #fff;
-        }
-        ​ .model-viewer-btn {
-          position: absolute;
-          left: 16px;
-          bottom: 10px;
-          height: 2.9vw;
-          font-weight: bold;
-          line-height: 2.9vw;
-          color: white;
-          background-color: #525252;
-          border: none;
-        }
+          ​ .model-viewer-btn {
+            position: absolute;
+            left: 16px;
+            bottom: 10px;
+            height: 2.9vw;
+            font-weight: bold;
+            line-height: 2.9vw;
+            color: white;
+            background-color: #525252;
+            border: none;
+            z-index: 100;
+          } //model-viewer-btn
+        } //model-viewer
       } //ar-container
     } //main
 
@@ -328,18 +329,8 @@ html {
           .model-viewer {
             width: 64vw;
             height: 75vh;
+            margin-bottom: 4px;
             background-color: #fff;
-          }
-          ​ .model-viewer-btn {
-            position: absolute;
-            left: 16px;
-            bottom: 10px;
-            height: 2.9vw;
-            font-weight: bold;
-            line-height: 2.9vw;
-            color: white;
-            background-color: #525252;
-            border: none;
           }
         } //ar-container
       } //main
