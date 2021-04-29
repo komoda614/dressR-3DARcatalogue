@@ -20,6 +20,7 @@ html body * a {
   /*下線引かない*/
   display: block;
   /*ブロック要素に*/
+  color: #000;
 }
 
 html body img {
@@ -86,6 +87,7 @@ html body main .dressr-container {
 
 html body main .dressr-container img {
   width: 17.1vw;
+  height: 35vw;
 }
 
 html body main .instagram-btn {
@@ -230,6 +232,7 @@ html body .contact-btn:active {
 }
 
 html body footer {
+  margin-top: 10vh;
   background-color: #ccc;
   color: black;
   height: 70px;
@@ -249,38 +252,38 @@ html body footer {
   }
   html body header .header-list {
     margin-right: 0.8vw;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     width: 60vw;
   }
   html body header .header-list li {
     margin-right: 3.6vw;
   }
   html body header .header-list li a {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   html body main {
     margin: 0 18vw 0 18vw;
   }
   html body main .dressr-title {
     margin: 0 0 3.7vh 0;
-    padding-top: 10vh;
+    padding-top: 13vh;
     border-bottom: 1px solid grey;
-    font-size: 6vw;
+    font-size: 5vw;
   }
   html body main .dressr-container img {
     width: 20vw;
   }
   html body main .instagram-btn {
     width: 32vw;
-    font-size: 2vw;
-    box-shadow: 0 3px #dddddd;
+    font-size: 3vw;
+    box-shadow: 0 4px #dddddd;
   }
   html body main .instagram-btn:active {
     top: 3px;
   }
   html body main .dressr-sentence {
     margin-top: 3vh;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   html body main .process {
     display: block;
@@ -308,11 +311,11 @@ html body footer {
     width: 31vw;
   }
   html body main .process .process-item .process-style .process-top {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   html body main .process .process-item .process-style .process-sentence {
     margin-top: 2vh;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   html body main .contact-btn {
     height: 5vh;
@@ -321,7 +324,7 @@ html body footer {
     /*ボタンを右寄せ*/
     line-height: 5vh;
     /*テキストを縦に中央揃え*/
-    font-size: 3vw;
+    font-size: 4vw;
     box-shadow: 0 3px #525252;
   }
   html body main .contact-btn:active {
@@ -329,9 +332,9 @@ html body footer {
   }
   html body main .ar-title {
     margin: 0 0 3.7vh 0;
-    padding-top: 10vh;
+    padding-top: 13vh;
     border-bottom: 1px solid grey;
-    font-size: 6vw;
+    font-size: 5vw;
   }
   html body main .ar-container {
     display: block;
@@ -340,7 +343,7 @@ html body footer {
   }
   html body main .ar-container .model-viewer {
     width: 64vw;
-    height: 76.8vw;
+    height: 75vh;
     background-color: #fff;
   }
   html body main .ar-container ​ .model-viewer-btn {

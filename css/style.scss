@@ -24,9 +24,9 @@ $mv-height: 20.5vw;
 
 @mixin title-m {
   margin: 0 0 3.7vh 0;
-  padding-top: 10vh;
+  padding-top: 13vh;
   border-bottom: 1px solid grey;
-  font-size: 6vw;
+  font-size: 5vw;
 }
 $img-width-m: 20vw;
 
@@ -44,6 +44,7 @@ html {
     & * a {
       text-decoration: none; /*下線引かない*/
       display: block; /*ブロック要素に*/
+      color: #000;
     }
     img {
       max-width: 100%; /*画像がはみ出さないように*/
@@ -95,6 +96,7 @@ html {
         justify-content: space-between;
         img {
           width: $img-width;
+          height: 35vw;
         }
       }
 
@@ -211,6 +213,7 @@ html {
     } //contact-btn
 
     footer {
+      margin-top: 10vh;
       background-color: #ccc;
       color: black;
       height: 70px;
@@ -233,12 +236,12 @@ html {
         }
         .header-list {
           margin-right: 0.8vw;
-          margin-bottom: 1vh;
+          margin-bottom: 2vh;
           width: 60vw;
           li {
             margin-right: 3.6vw;
             a {
-              font-size: 2vw;
+              font-size: 3vw;
             }
           }
         }
@@ -257,8 +260,8 @@ html {
 
         .instagram-btn {
           width: 32vw;
-          font-size: 2vw;
-          box-shadow: 0 3px #dddddd;
+          font-size: 3vw;
+          box-shadow: 0 4px #dddddd;
 
           &:active {
             top: 3px;
@@ -267,7 +270,7 @@ html {
 
         .dressr-sentence {
           margin-top: 3vh;
-          font-size: 2vw;
+          font-size: 3vw;
         }
 
         .process {
@@ -292,11 +295,11 @@ html {
             .process-style {
               width: 31vw;
               .process-top {
-                font-size: 3vw;
+                font-size: 3.5vw;
               }
               .process-sentence {
                 margin-top: 2vh;
-                font-size: 2vw;
+                font-size: 3vw;
               }
             } //process-style
           } //process-item
@@ -307,7 +310,7 @@ html {
           width: 32vw;
           margin: 4vh 0 7vh auto; /*ボタンを右寄せ*/
           line-height: 5vh; /*テキストを縦に中央揃え*/
-          font-size: 3vw;
+          font-size: 4vw;
           box-shadow: 0 3px #525252;
 
           &:active {
@@ -324,7 +327,7 @@ html {
           /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
           .model-viewer {
             width: 64vw;
-            height: 76.8vw;
+            height: 75vh;
             background-color: #fff;
           }
           ​ .model-viewer-btn {
