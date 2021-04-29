@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* 共通部分 */
+html {
+  font-size: 1rem;
+}
+
+html body {
+  font-family: sans-serif, "メイリオ", "Meiryo";
+  line-height: 1.7;
+  text-align: left;
+}
+
+html body * {
+  box-sizing: border-box;
+  /*padding,borderはwidthに含む*/
+}
+
+html body * a {
+  text-decoration: none;
+  /*下線引かない*/
+  display: block;
+  /*ブロック要素に*/
+}
+
+html body img {
+  max-width: 100%;
+  /*画像がはみ出さないように*/
+}
+
+html body ul {
+  list-style-type: none;
+  /*listに黒点つけない*/
+}
+
+html body header {
+  height: 15vh;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+html body header .wakuzawa-logo {
+  margin: 6.6vh auto auto 5.3vw;
+  width: 18vw;
+}
+
+html body header .header-list {
+  margin-right: 0.8vw;
+  width: 32.4vw;
+  display: flex;
+  align-items: flex-end;
+  /*ブロックを下揃え*/
+  justify-content: flex-end;
+  /*両端揃えて均等配置*/
+}
+
+html body header .header-list li {
+  margin-right: 3.6vw;
+}
+
+html body header .header-list li a {
+  font-size: 1.7vw;
+}
+
+html body main {
+  margin: 21.2vh 22.1vw 0 23.3vw;
+}
+
+html body main .dressr-title {
+  margin: 6.2vh 32.6vw 3.7vh 0;
+  border-bottom: 1px solid grey;
+  font-size: 2.1vw;
+}
+
+html body main .dressr-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+html body main .dressr-container img {
+  width: 17.1vw;
+}
+
+html body main .instagram-btn {
+  height: 4.1vh;
+  width: 15.2vw;
+  margin-top: 0.9vh;
+  text-align: center;
+  /*左右真ん中寄せ*/
+  line-height: 4.1vh;
+  /*上下真ん中寄せ*/
+  background-color: #727272;
+  color: #fff;
+  font-size: 1.3vw;
+  opacity: 0.8;
+  cursor: pointer;
+  /*カーソル乗せると指になる*/
+  box-shadow: 0 5px #dddddd;
+}
+
+html body main .instagram-btn:hover {
+  opacity: 1;
+}
+
+html body main .instagram-btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+html body main .dressr-sentence {
+  margin-top: 4.6vh;
+  font-size: 1.3vw;
+}
+
+html body main .process {
+  margin-top: 3.7vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+html body main .process .arrow .arrow-bottom {
+  display: none;
+}
+
+html body main .process .process-top {
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
+html body main .process .process-sentence {
+  margin-top: 2.2vh;
+  font-size: 1.1vw;
+}
+
+html body main .contact-btn {
+  height: 6.9vh;
+  width: 26.6vw;
+  margin: 7vh 0 0 auto;
+  /*ボタンを右寄せ*/
+  text-align: center;
+  line-height: 6.9vh;
+  /*テキストを縦に中央揃え*/
+  background-color: #000;
+  color: #fff;
+  font-size: 2.5vw;
+  opacity: 0.8;
+  cursor: pointer;
+  /*カーソル乗せると指になる*/
+  box-shadow: 0 5px #525252;
+}
+
+html body main .contact-btn:hover {
+  opacity: 1;
+}
+
+html body main .contact-btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+html body main .ar-title {
+  margin: 6.2vh 32.6vw 3.7vh 0;
+  border-bottom: 1px solid grey;
+  font-size: 2.1vw;
+}
+
+html body main .ar-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+html body main .ar-container img {
+  width: 17.1vw;
+}
+
+html body footer {
+  background-color: #ccc;
+  color: black;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  html body main .process {
+    display: block;
+    /*フレックスボックス解除*/
+  }
+  html body main .process .arrow .arrow-right {
+    display: none;
+    /*右矢印削除*/
+  }
+  html body main .process .arrow .arrow-bottom {
+    display: block;
+  }
+}
