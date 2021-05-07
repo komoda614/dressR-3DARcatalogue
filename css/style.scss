@@ -96,7 +96,7 @@ html {
         justify-content: space-between;
         img {
           width: $img-width;
-          height: 35vw;
+          height: 32vw;
         }
       }
 
@@ -129,7 +129,6 @@ html {
 
       .dressr-sentence {
         margin-top: 4.6vh;
-        font-size: 1.3vw;
       }
 
       .process {
@@ -178,25 +177,28 @@ html {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
-        .model-viewer {
-          width: $img-width;
-          height: $mv-height;
-          background-color: #fff;
-          ​ .model-viewer-btn {
-            position: absolute;
-            left: 16px;
-            bottom: 10px;
-            height: 2.9vw;
+        .ar-item {
+          /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
+          .model-viewer {
+            width: $img-width;
+            height: $mv-height;
+            background-color: #fff;
+          } //model-viewer
+          .model-viewer-btn {
+            width: $img-width;
+            height: 5vh;
             font-weight: bold;
-            line-height: 2.9vw;
+            line-height: 5vh;
             color: white;
             background-color: #525252;
             border: none;
-            z-index: 100;
           } //model-viewer-btn
-        } //model-viewer
+        } //ar-item
       } //ar-container
+
+      .ar-sentence {
+        margin-top: 4vw;
+      }
     } //main
 
     .contact-btn {
@@ -325,13 +327,18 @@ html {
 
         .ar-container {
           display: block; /*flexbox解除*/
-          /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
-          .model-viewer {
-            width: 64vw;
-            height: 75vh;
-            margin-bottom: 4px;
-            background-color: #fff;
-          }
+          .ar-item {
+            /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
+            .model-viewer {
+              width: 64vw;
+              height: 75vw;
+              margin-bottom: 4px;
+              background-color: #fff;
+            }
+            .model-viewer-btn {
+              width: 64vw;
+            }
+          } //ar-item
         } //ar-container
       } //main
     } //body
