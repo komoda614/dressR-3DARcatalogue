@@ -87,7 +87,7 @@ html body main .dressr-container {
 
 html body main .dressr-container img {
   width: 17.1vw;
-  height: 35vw;
+  height: 32vw;
 }
 
 html body main .instagram-btn {
@@ -122,7 +122,6 @@ html body main .instagram-btn a {
 
 html body main .dressr-sentence {
   margin-top: 4.6vh;
-  font-size: 1.3vw;
 }
 
 html body main .process {
@@ -183,26 +182,30 @@ html body main .ar-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+html body main .ar-container .ar-item {
   /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
 }
 
-html body main .ar-container .model-viewer {
+html body main .ar-container .ar-item .model-viewer {
   width: 17.1vw;
   height: 20.5vw;
   background-color: #fff;
 }
 
-html body main .ar-container .model-viewer ​ .model-viewer-btn {
-  position: absolute;
-  left: 16px;
-  bottom: 10px;
-  height: 2.9vw;
+html body main .ar-container .ar-item .model-viewer-btn {
+  width: 17.1vw;
+  height: 5vh;
   font-weight: bold;
-  line-height: 2.9vw;
+  line-height: 5vh;
   color: white;
   background-color: #525252;
   border: none;
-  z-index: 100;
+}
+
+html body main .ar-sentence {
+  margin-top: 4vw;
 }
 
 html body .contact-btn {
@@ -340,12 +343,17 @@ html body footer {
   html body main .ar-container {
     display: block;
     /*flexbox解除*/
+  }
+  html body main .ar-container .ar-item {
     /* widthやheightの値は要カスタマイズ -----------------------------------------------*/
   }
-  html body main .ar-container .model-viewer {
+  html body main .ar-container .ar-item .model-viewer {
     width: 64vw;
-    height: 75vh;
+    height: 75vw;
     margin-bottom: 4px;
     background-color: #fff;
+  }
+  html body main .ar-container .ar-item .model-viewer-btn {
+    width: 64vw;
   }
 }
