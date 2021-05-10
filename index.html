@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <a href="https://wakuzawa-inc.com/" class="wakuzawa-logo"><img src="image/ワクザワ黒.png" alt="ワクザワ"></a>
+        <a href="https://wakuzawa-inc.com/" class="wakuzawa-logo"><img src="image/wakuzawa-bl.png" alt="ワクザワ"></a>
         <ul class="header-list">
             <li><a href="#dressr-title">dressR</a></li>
             <li><a href="#ar-title">3D/AR CATALOGUE</a></li>
@@ -38,7 +38,7 @@
 
         <div class="process">
             <div class="process-item">
-                <img src="image/写真撮影-d.png" alt="写真撮影">
+                <img src="image/photography-dress.png" alt="写真撮影">
                 <div class="process-style">
                     <p class="process-top">写真撮影</p>
                     <p class="process-sentence">商品の撮影を行います</p>
@@ -46,12 +46,12 @@
             </div>
             
             <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
+                <img src="image/arrow-right.png" class="arrow-right" alt="右">
+                <img src="image/arrow-bottom.png" class="arrow-bottom" alt="下">
             </div>
 
             <div class="process-item">
-                <img src="image/フォトグラメトリ-d.png" alt="フォトグラメトリ">
+                <img src="image/modeling-dress.png" alt="フォトグラメトリ">
                 <div class="process-style">
                     <p class="process-top">フォトグラメトリ</p>
                     <p class="process-sentence">撮影した写真から３Ｄモデルを制作します</p>
@@ -59,12 +59,12 @@
             </div>
             
             <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
+                <img src="image/arrow-right.png" class="arrow-right" alt="右">
+                <img src="image/arrow-bottom.png" class="arrow-bottom" alt="下">
             </div>
 
             <div class="process-item">
-                <img src="image/AR化-d.png" alt="AR化">
+                <img src="image/ar-dress.png" alt="AR化">
                 <div class="process-style">
                     <p class="process-top">AR化</p>
                     <p class="process-sentence">ARを表示するサイトを作成いたします</p>
@@ -148,6 +148,7 @@
             <div class="ar-item">
                 <!-- slick.jsアイテム-->
                 <model-viewer
+                id="model4"
                 class="model-viewer"
                 ios-src="model/gassyou.usdz"
                 src="model/gassyou.glb"
@@ -169,6 +170,7 @@
             <div class="ar-item">
                 <!-- slick.jsアイテム-->
                 <model-viewer
+                id="model5"
                 class="model-viewer"
                 ios-src="model/tonbi.usdz"
                 src="model/tonbi.glb"
@@ -190,7 +192,8 @@
             <div class="ar-item">
                 <!-- slick.jsアイテム-->
                 <model-viewer
-                class="model-viewer"
+                id="model6"
+                class="model-viewer model6"
                 ios-src="model/cape.usdz"
                 src="model/cape.glb"
                 preload="preload"
@@ -216,7 +219,7 @@
 
         <div class="process">
             <div class="process-item">
-                <img src="image/写真撮影-3.png" alt="写真撮影-3">
+                <img src="image/photography-3d.png" alt="写真撮影-3">
                 <div class="process-style">
                     <p class="process-top">写真撮影</p>
                     <p class="process-sentence">商品の撮影を行います</p>
@@ -224,12 +227,12 @@
             </div>
             
             <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
+                <img src="image/arrow-right.png" class="arrow-right" alt="右">
+                <img src="image/arrow-bottom.png" class="arrow-bottom" alt="下">
             </div>
 
             <div class="process-item">
-                <img src="image/フォトグラメトリ-3.png" alt="フォトグラメトリ-3">
+                <img src="image/modeling-3d.png" alt="フォトグラメトリ-3">
                 <div class="process-style">
                     <p class="process-top">フォトグラメトリ</p>
                     <p class="process-sentence">撮影した写真から３Ｄモデルを制作します</p>
@@ -237,12 +240,12 @@
             </div>
             
             <div class="arrow">
-                <img src="image/右.png" class="arrow-right" alt="右">
-                <img src="image/下.png" class="arrow-bottom" alt="下">
+                <img src="image/arrow-right.png" class="arrow-right" alt="右">
+                <img src="image/arrow-bottom.png" class="arrow-bottom" alt="下">
             </div>
 
             <div class="process-item">
-                <img src="image/AR化-3.png" alt="AR化-3">
+                <img src="image/ar-3d.png" alt="AR化-3">
                 <div class="process-style">
                     <p class="process-top">AR化</p>
                     <p class="process-sentence">ARを表示するサイトを作成いたします</p>
@@ -268,22 +271,41 @@
     ></script>
     <script>
         document.querySelector('#model1').addEventListener('click', (event) => {
-          const modelViewer = document.querySelector('#model1-btn');
-          modelViewer.activateAR();
-        });
-    </script>
-    <script>
-        document.querySelector('#model2').addEventListener('click', (event) => {
-            const modelViewer = document.querySelector('#model2-btn');
+            const modelViewer = document.querySelector("model-viewer");
             modelViewer.activateAR();
         });
     </script>
     <script>
         document.querySelector('#model2').addEventListener('click', (event) => {
-          const modelViewer = document.querySelector('#model2-btn');
-          modelViewer.activateAR();
+            const modelViewer = document.querySelector("model-viewer");
+            modelViewer.activateAR();
         });
     </script>
+    <script>
+        document.querySelector('#model3').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("model-viewer");
+            modelViewer.activateAR();
+        });
+    </script>
+    <script>
+        document.querySelector('#model4').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("model-viewer");
+            modelViewer.activateAR();
+        });
+    </script>
+    <script>
+        document.querySelector('#model5').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("#model5");
+            modelViewer.activateAR();
+        });
+    </script>
+    <script>
+        document.querySelector('#model6').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector(".model6");
+            modelViewer.activateAR();
+        });
+    </script>
+    
     
 
 
