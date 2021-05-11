@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <a href="https://wakuzawa-inc.com/" class="wakuzawa-logo"><img src="image/wakuzawa-bl.png" alt="ワクザワ"></a>
+        <a href="../index.html" class="wakuzawa-logo"><img src="image/wakuzawa-bl.png" alt="ワクザワ"></a>
         <ul class="header-list">
             <li><a href="#dressr-title">dressR</a></li>
             <li><a href="#ar-title">3D/AR CATALOGUE</a></li>
@@ -73,7 +73,7 @@
         </div>
 
         <div class="contact-btn">
-            CONTACT
+            <a href="https://forms.gle/wNEXXybLcJn3djKK6">CONTACT</a>
         </div>
 
         <h2 class="ar-title" id="ar-title">3D/AR CATALOGUE</h2>    <!-- 3D/AR-catalogue -->
@@ -101,7 +101,7 @@
     
             </div>
 
-            <!-- <div class="ar-item">
+            <div class="ar-item">
                 <model-viewer
                 id="model2"
                 class="model-viewer"
@@ -122,7 +122,7 @@
 
             </div>
 
-            <div class="ar-item">
+            <!-- <div class="ar-item">
                 <model-viewer
                 id="model3"
                 class="model-viewer"
@@ -249,7 +249,7 @@
         </div>
 
         <div class="contact-btn">
-            CONTACT
+            <a href="https://forms.gle/yozEzepmSjN2Hodr9">CONTACT</a>
         </div>
 
 
@@ -267,6 +267,11 @@
     <script>
         document.querySelector('#model1-btn').addEventListener('click', (event) => {
             const modelViewer = document.querySelector("#model1");
+            modelViewer.activateAR();
+        });
+
+        document.querySelector('#model2-btn').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("#model2");
             modelViewer.activateAR();
         });
     </script>
