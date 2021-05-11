@@ -330,10 +330,14 @@ html body footer {
     width: 32vw;
     margin: 4vh 0 7vh auto;
     /*ボタンを右寄せ*/
+    box-shadow: 0 3px #525252;
+  }
+  html body main .contact-btn a {
+    height: 5vh;
+    width: 32vw;
     line-height: 5vh;
     /*テキストを縦に中央揃え*/
     font-size: 4vw;
-    box-shadow: 0 3px #525252;
   }
   html body main .contact-btn:active {
     top: 3px;
