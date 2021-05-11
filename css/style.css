@@ -149,16 +149,21 @@ html body main .contact-btn {
   width: 26.6vw;
   margin: 7vh 0 7vh auto;
   /*ボタンを右寄せ*/
-  text-align: center;
-  line-height: 6.9vh;
-  /*テキストを縦に中央揃え*/
   background-color: #000;
-  color: #fff;
-  font-size: 2.5vw;
   opacity: 1;
   cursor: pointer;
   /*カーソル乗せると指になる*/
   box-shadow: 0 5px #525252;
+}
+
+html body main .contact-btn a {
+  height: 6.9vh;
+  width: 26.6vw;
+  text-align: center;
+  line-height: 6.9vh;
+  /*テキストを縦に中央揃え*/
+  color: #fff;
+  font-size: 2.5vw;
 }
 
 html body main .contact-btn:hover {
@@ -207,16 +212,21 @@ html body .contact-btn {
   width: 26.6vw;
   margin: 7vh 0 7vh auto;
   /*ボタンを右寄せ*/
-  text-align: center;
-  line-height: 6.9vh;
-  /*テキストを縦に中央揃え*/
   background-color: #000;
-  color: #fff;
-  font-size: 2.5vw;
   opacity: 1;
   cursor: pointer;
   /*カーソル乗せると指になる*/
   box-shadow: 0 5px #525252;
+}
+
+html body .contact-btn a {
+  height: 6.9vh;
+  width: 26.6vw;
+  text-align: center;
+  line-height: 6.9vh;
+  /*テキストを縦に中央揃え*/
+  color: #fff;
+  font-size: 2.5vw;
 }
 
 html body .contact-btn:hover {
