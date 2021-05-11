@@ -117,7 +117,7 @@
                 alt="A 3D model of notconventional"
                 >
                 </model-viewer>
-                <button class="model-viewer-btn" slot="ar-button" id="model2-btn">
+                <button class="model-viewer-btn" id="model2-btn">
                     START AR
                 </button>
 
@@ -139,7 +139,7 @@
                 alt="A 3D model of notconventional"
                 >
                 </model-viewer>
-                <button class="model-viewer-btn" slot="ar-button" id="model3-btn">
+                <button class="model-viewer-btn" id="model3-btn">
                     START AR
                 </button>
 
@@ -161,7 +161,7 @@
                 alt="A 3D model of notconventional"
                 >
                 </model-viewer>
-                <button class="model-viewer-btn" slot="ar-button">
+                <button class="model-viewer-btn" id="model4-btn">
                     START AR
                 </button>
 
@@ -183,7 +183,7 @@
                 alt="A 3D model of notconventional"
                 >
                 </model-viewer>
-                <button class="model-viewer-btn">
+                <button class="model-viewer-btn" id="model5-btn">
                     START AR
                 </button>
 
@@ -205,7 +205,7 @@
                 alt="A 3D model of notconventional"
                 >
                 </model-viewer>
-                <button class="model-viewer-btn" slot="ar-button">
+                <button class="model-viewer-btn" id="model6-btn">
                     START AR
                 </button>
 
@@ -270,38 +270,38 @@
     src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
     <script>
-        document.querySelector('#model1').addEventListener('click', (event) => {
-            const modelViewer = document.querySelector("model-viewer");
+        document.querySelector('#model1-btn').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("model1");
             modelViewer.activateAR();
         });
     </script>
     <script>
-        document.querySelector('#model2').addEventListener('click', (event) => {
-            const modelViewer = document.querySelector("model-viewer");
+        document.querySelector('#model2-btn').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("model2");
             modelViewer.activateAR();
         });
     </script>
     <script>
-        document.querySelector('#model3').addEventListener('click', (event) => {
-            const modelViewer = document.querySelector("model-viewer");
+        document.querySelector('#model3-btn').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("model3");
             modelViewer.activateAR();
         });
     </script>
     <script>
-        document.querySelector('#model4').addEventListener('click', (event) => {
-            const modelViewer = document.querySelector("model-viewer");
+        document.querySelector('#model4-btn').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("model4");
             modelViewer.activateAR();
         });
     </script>
     <script>
-        document.querySelector('#model5').addEventListener('click', (event) => {
+        document.querySelector('#model5-btn').addEventListener('click', (event) => {
             const modelViewer = document.querySelector("#model5");
             modelViewer.activateAR();
         });
     </script>
     <script>
-        document.querySelector('#model6').addEventListener('click', (event) => {
-            const modelViewer = document.querySelector(".model6");
+        document.querySelector('#model6-btn').addEventListener('click', (event) => {
+            const modelViewer = document.querySelector("#model6");
             modelViewer.activateAR();
         });
     </script>
