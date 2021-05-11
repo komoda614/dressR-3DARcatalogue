@@ -185,13 +185,7 @@ html {
             background-color: #fff;
           } //model-viewer
           .model-viewer-btn {
-            width: $img-width;
-            height: 5vh;
-            font-weight: bold;
-            line-height: 5vh;
-            color: white;
-            background-color: #525252;
-            border: none;
+            display: none;
           } //model-viewer-btn
         } //ar-item
       } //ar-container
@@ -336,7 +330,14 @@ html {
               background-color: #fff;
             }
             .model-viewer-btn {
+              display: block;
               width: 64vw;
+              height: 5vh;
+              font-weight: bold;
+              line-height: 5vh;
+              color: white;
+              background-color: #525252;
+              border: none;
             }
           } //ar-item
         } //ar-container
